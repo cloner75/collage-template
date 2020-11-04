@@ -1,32 +1,41 @@
 import { Component } from 'react';
 import Menu from './../Home/menu';
+import './../../assets/styles/signup.css'
 
 class SignUp extends Component {
   constructor(props) {
     super(props);
-    this.state = { color: 'red' };
+    this.state = { username: '', password: '' };
   }
-  shoot() {
-    alert('beshoot');
+
+  inputChangeHandler = (event) => {
+    this.setState({ [event.target.name]: event.target.value })
   }
+
+  check = () => {
+    console.log(`user:${this.state.username},pass:${this.state.password}`)
+  }
+
 
   render() {
     return (
       <div>
         <Menu />
-        <h1>SignUp</h1>
-        <h1>color state: {this.state.color} </h1>
-        <h2>color props: {this.props.color} </h2>
-        <button
-          style={{
-            backgroundColor: 'silver',
-            color: 'black',
-            padding: '10px',
-          }}
-          onClick={this.shoot}
-        >
-          Take the shot!
-        </button>
+        <div id="signUp">
+          <h1>SignUp</h1>
+          <p>
+            <label>username</label>
+            <input type="text" name="username" onChange={this.inputChangeHandler} />
+          </p>
+          <p>
+            <label>password</label>
+            <input type="password" name="password" onChange={this.inputChangeHandler} />
+          </p>
+          <p>
+            <button onClick={this.check}>SignUp</button>
+          </p>
+        </div>
+
       </div>
     );
   }
