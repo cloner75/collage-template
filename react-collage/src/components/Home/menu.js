@@ -17,9 +17,6 @@ class Menu extends Component {
             <Link className='link' to="/signUp">ثبت نام</Link>
           </li>
           <li>
-            <Link className='link' to="/signUp">ثبت نام</Link>
-          </li>
-          <li>
             <Link className='link' to="/dashboard/user/upload">آپلود فایل</Link>
           </li>
           <li>

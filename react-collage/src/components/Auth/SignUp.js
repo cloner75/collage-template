@@ -20,7 +20,6 @@ class SignUp extends Component {
   render() {
     return (
       <div>
-        <Menu />
         <div id="signUp">
           <h1>SignUp</h1>
           <p>

@@ -20,7 +20,6 @@ class GetNotification extends Component {
   render() {
     return (
       <div>
-        <Menu />
         <div id="signIn">
           <h1>SignIn</h1>
           <p>

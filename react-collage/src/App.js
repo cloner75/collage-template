@@ -3,14 +3,14 @@ import Home from './components/Home/';
 import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import Upload from './components/Upload';
-import User from './components/User';
 import Profile from './components/User/profile'
 import Chat from './components/Chat';
 import Conversation from './components/Conversation';
-import GetNotification from './components/Notification/Get'
-import SetNotification from './components/Notification/Set'
-import GetClassify from './components/Classify/Get'
-import SetClassify from './components/Classify/Set'
+import GetNotification from './components/Notification/Get';
+import SetNotification from './components/Notification/Set';
+import GetClassify from './components/Classify/Get';
+import SetClassify from './components/Classify/Set';
+import Menu from './components/Home/menu';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -20,6 +20,7 @@ const App = () => {
   return (
     <Router>
       <div>
+        <Menu />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/login' component={SignIn} />

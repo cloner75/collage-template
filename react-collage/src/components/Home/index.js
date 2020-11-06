@@ -17,7 +17,6 @@ class Home extends Component {
     const { users } = this.props.users;
     return (
       <div>
-        <Menu />
         {users.map(item => (
           <Fragment key={item.id}>
             <p>{item.id} :{item.username}</p>
