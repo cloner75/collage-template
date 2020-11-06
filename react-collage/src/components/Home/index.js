@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component,Fragment } from 'react';
 import Menu from './menu';
 import { connect } from 'react-redux';
 import { getUsers } from './../../store/actions/usersActions';
@@ -19,9 +19,9 @@ class Home extends Component {
       <div>
         <Menu />
         {users.map(item => (
-          <React.Fragment key={item.id}>
+          <Fragment key={item.id}>
             <p>{item.id} :{item.username}</p>
-          </React.Fragment>
+          </Fragment>
         ))}
       </div>
     );

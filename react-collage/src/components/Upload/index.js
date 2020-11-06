@@ -1,9 +1,8 @@
 import { Component } from 'react';
 
-class Car extends Component {
+class Upload extends Component {
   constructor(props) {
     super(props);
-    this.state = { color: 'red' };
   }
   shoot() {
     alert('beshoot');
@@ -12,8 +11,6 @@ class Car extends Component {
   render() {
     return (
       <div>
-        <h1>color state: {this.state.color} </h1>
-        <h2>color props: {this.props.color} </h2>
         <button
           style={{
             backgroundColor: 'silver',
@@ -29,4 +26,4 @@ class Car extends Component {
   }
 }
 
-export default Car;
+export default Upload;

@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import Menu from './../Home/menu';
+import Menu from '../Home/menu';
 import './../../assets/styles/signin.css'
 
-class SignIn extends Component {
+class SetNotification extends Component {
   constructor(props) {
     super(props);
     this.state = { username: '', password: '' };
@@ -41,4 +41,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default SetNotification;
