@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { getUsers } from '../../store/actions/usersActions';
 
@@ -10,13 +10,13 @@ class Profile extends Component {
     const { users } = this.props.users;
 
     return (
-      <div>
+      <Fragment>
         {users.map((u) => (
-          <React.Fragment key={u.id}>
+          <Fragment key={u.id}>
             <h6>{u.name}</h6>
-          </React.Fragment>
+          </Fragment>
         ))}
-      </div>
+      </Fragment>
     );
   }
 }

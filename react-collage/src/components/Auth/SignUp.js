@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import Menu from './../Home/menu';
 import './../../assets/styles/signup.css'
 
 class SignUp extends Component {

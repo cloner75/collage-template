@@ -20,9 +20,6 @@ class Menu extends Component {
             <Link className='link' to="/dashboard/user/upload">آپلود فایل</Link>
           </li>
           <li>
-            <Link className='link' to="/dashboard/user/update">پروفایل</Link>
-          </li>
-          <li>
             <Link className='link' to="/dashboard/user/profile">پروفایل</Link>
           </li>
           <li>

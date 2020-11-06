@@ -1,5 +1,4 @@
 import { Component,Fragment } from 'react';
-import Menu from './menu';
 import { connect } from 'react-redux';
 import { getUsers } from './../../store/actions/usersActions';
 
