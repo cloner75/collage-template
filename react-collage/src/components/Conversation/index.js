@@ -1,4 +1,5 @@
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
+import userAvatar from './../../assets/images/userAvatar.png'
 import './../../assets/styles/signin.css'
 
 class Conversation extends Component {
@@ -18,23 +19,76 @@ class Conversation extends Component {
 
   render() {
     return (
-      <div>
-        <div id="signIn">
-          <h1>SignIn</h1>
-          <p>
-            <label>username</label>
-            <input type="text" name="username" onChange={this.inputChangeHandler} />
-          </p>
-          <p>
-            <label>password</label>
-            <input type="password" name="password" onChange={this.inputChangeHandler} />
-          </p>
-          <p>
-            <button onClick={this.check}>SignIn</button>
-          </p>
-        </div>
+      <Fragment>
+        <div id="conversation">
+          {/* contacts */}
+          <div id="contacts">
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+            {/* start items */}
+            <div className="item">
+              <img className="avatar" src={userAvatar} />
+              <div className="title">ehsan</div>
+              <div className="lastChat">ehsan this ...</div>
+            </div>
+            {/* end Items */}
+          </div>
+          {/* chat */}
+          <div id="chat">
+              <div id="box">
+                <input type="text"/>
+              </div>
+          </div>
 
-      </div>
+        </div>
+      </Fragment>
     );
   }
 }

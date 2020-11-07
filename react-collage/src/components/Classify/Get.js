@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
 import './../../assets/styles/signin.css'
 
 class GetClassify extends Component {
@@ -18,23 +18,92 @@ class GetClassify extends Component {
 
   render() {
     return (
-      <div>
-        <div id="signIn">
-          <h1>SignIn</h1>
-          <p>
-            <label>username</label>
-            <input type="text" name="username" onChange={this.inputChangeHandler} />
-          </p>
-          <p>
-            <label>password</label>
-            <input type="password" name="password" onChange={this.inputChangeHandler} />
-          </p>
-          <p>
-            <button onClick={this.check}>SignIn</button>
-          </p>
+      <Fragment>
+        <div id="get_classify">
+          <table>
+            <tr>
+              <th>ردیف</th>
+              <th>نام</th>
+              <th>شماره دانشجویی</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>احسان یونسی</td>
+              <td>0520964098</td>
+            </tr>
+          </table>
         </div>
-
-      </div>
+      </Fragment>
     );
   }
 }

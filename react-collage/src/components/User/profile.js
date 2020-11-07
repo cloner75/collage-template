@@ -11,11 +11,32 @@ class Profile extends Component {
 
     return (
       <Fragment>
-        {users.map((u) => (
-          <Fragment key={u.id}>
-            <h6>{u.name}</h6>
-          </Fragment>
-        ))}
+        <div id="profile">
+          <div>
+            <div className="title">type</div>
+            <div className="value">User</div>
+          </div>
+          <div>
+            <div className="title">username</div>
+            <div className="value">ehsan</div>
+          </div>
+          <div>
+            <div className="title">email</div>
+            <div className="value">ehsan.younesi.1375@gmail.com</div>
+          </div>
+          <div>
+            <div className="title">rent</div>
+            <div className="value">User</div>
+          </div>
+          <div>
+            <div className="title">score</div>
+            <div className="value">2000</div>
+          </div>
+          <div>
+            <div className="title">status</div>
+            <div className="value">User</div>
+          </div>
+        </div>
       </Fragment>
     );
   }

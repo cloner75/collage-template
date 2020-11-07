@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
 import './../../assets/styles/signin.css'
 
 class SetNotification extends Component {
@@ -18,23 +18,23 @@ class SetNotification extends Component {
 
   render() {
     return (
-      <div>
-        <div id="signIn">
-          <h1>SignIn</h1>
+      <Fragment>
+        <div id="set_notification">
           <p>
-            <label>username</label>
-            <input type="text" name="username" onChange={this.inputChangeHandler} />
+            <label>title</label></p>
+          <p>
+            <input type="text" />
           </p>
           <p>
-            <label>password</label>
-            <input type="password" name="password" onChange={this.inputChangeHandler} />
+            <label>body</label></p>
+          <p>
+            <textarea />
           </p>
           <p>
-            <button onClick={this.check}>SignIn</button>
+            <input type="button" value="send" />
           </p>
         </div>
-
-      </div>
+      </Fragment>
     );
   }
 }

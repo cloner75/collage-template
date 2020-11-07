@@ -1,8 +1,9 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     position: relative;
 }
+
 body {
     background: #252626;
 }
@@ -11,4 +12,174 @@ body {
     font-family: "IranSans";
     src: url("./../fonts/IRANSansWeb.eot");
     src: url("./../fonts/IRANSansWeb.woff") format("woff");
-    }
+}
+
+/* Profile */
+
+#profile {
+    margin: 10px auto;
+    width: 1024px;
+    height: 500px;
+}
+
+#profile .title {
+    font-weight: bold;
+}
+
+#profile .title, #profile .value {
+    margin: 5px;
+    float: left;
+    width: 46%;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background: #00bfa48c;
+    color: #fff;
+    box-shadow: 0px 0px 3px 0px #4587c1bf;
+}
+
+/* Conversation */
+
+#conversation {
+    margin: 10px auto;
+    width: 1024px;
+}
+
+#conversation #contacts {
+    float: left;
+    width: 300px;
+    height: 700px;
+}
+
+#conversation #contacts .item {
+    margin: 5px 0;
+    padding: 5px;
+    height: 50px;
+    background: tomato;
+    border-radius: 5px;
+}
+
+#conversation #contacts .item img {
+    float: left;
+    margin: 5px 0;
+    width: 40px;
+}
+
+#conversation #contacts .item .title {
+    float: left;
+    padding: 3px 10px;
+    width: 220px;
+    color: white;
+    font-weight: bold;
+}
+
+#conversation #contacts .item .lastChat {
+    float: left;
+    width: 220px;
+    padding: 3px 15px;
+    color: white;
+}
+
+#conversation #chat #box {
+    float: left;
+    margin: 10px;
+    width: 700px;
+    height: 700px;
+    border: 1px solid #fff;
+}
+
+/* Get Notifications */
+
+#get_notification {
+    direction: rtl;
+    margin: 10px auto;
+    width: 1024px;
+    height: 700px;
+    font-family: 'IranSans';
+}
+
+#get_notification h1 {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+#get_notification .box {
+    padding: 10px 20px;
+    margin: 5px auto;
+    width: 1000px;
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#get_notification .title {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #6f086f;
+}
+
+#get_notification .body {
+    font-size: 1.2em;
+}
+
+#get_notification .date {
+    font-size: 1em;
+    direction: ltr;
+    color: #066221;
+}
+/* Set Notification */
+#set_notification {
+    direction: rtl;
+    margin:10px auto;
+    width: 1024px;
+}
+#set_notification label {
+    color: #fff;
+    margin: 10px;
+}
+
+#set_notification input[type=text] ,#set_notification textarea {
+    margin: 10px 20px;
+    width: 500px !important;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+}
+#set_notification input[type=button] {
+    margin: 10px 20px;
+    width: 100px !important;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background: rgb(6, 136, 38);
+    color: #fff;
+    font-family: 'IranSans';
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+
+
+/* Get Classify */
+
+#get_classify {
+    width: 1024px;
+    margin: 10px auto;
+}
+
+#get_classify table {
+    direction: rtl;
+    width: 100%;
+    font-family: 'IranSans';
+}
+#get_classify table tr th {
+    background: #256d0891;
+    color: #f1f1f1;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+#get_classify table tr td {
+    background: #f1f1f1;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
