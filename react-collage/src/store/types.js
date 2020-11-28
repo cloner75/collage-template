@@ -16,11 +16,13 @@ export const SET_CHAT = 'SET_CHAT';
 export const GET_CHATS = 'GET_CHATS';
 export const GET_CHAT = 'GET_CHAT';
 export const CHAT_ERROR = 'CHAT_ERROR';
+export const UPDATE_CHAT = 'UPDATE_CHAT';
 
 // Notification
-export const SET_NOTIFICATIONS = 'SET_NOTIFICATION';
+export const SET_NOTIFICATION = 'SET_NOTIFICATION';
 export const GET_NOTIFICATIONS = 'GET_NOTIFICATIONS';
 export const GET_NOTIFICATION = 'GET_NOTIFICATION';
+export const UPDATE_NOTIFICATION = 'UPDATE_NOTIFICATION';
 export const NOTIFICATION_ERROR = 'NOTIFICATION_ERROR';
 
 
