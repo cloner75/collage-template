@@ -1,2 +1,2 @@
 # collage-template
-bootstrap
+react
