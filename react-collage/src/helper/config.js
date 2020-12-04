@@ -12,3 +12,6 @@ export const user = {
 export const conversation = {
     url: URL.concat('conversation/')
 }
+export const auth = {
+    url: URL
+}

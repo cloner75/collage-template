@@ -1,4 +1,4 @@
-import { GET_USERS, GET_USER, UPDATE_USER, } from '../types';
+import { GET_USERS, GET_USER, UPDATE_USER, SIGN_IN, SIGN_UP } from '../types';
 
 const initialState = {
     users: [],
@@ -23,7 +23,7 @@ export const GetUser = (state = initialState, action) => {
         case GET_USER:
             return {
                 ...state,
-                user: action.payload,
+                users: action.payload,
                 loading: false,
             };
         default:
@@ -34,6 +34,32 @@ export const GetUser = (state = initialState, action) => {
 export const UpdateUser = (state = initialState, action) => {
     switch (action.type) {
         case UPDATE_USER:
+            return {
+                ...state,
+                users: action.payload,
+                loading: false,
+            };
+        default:
+            return state;
+    }
+};
+
+export const AuthSignIn = (state = initialState, action) => {
+    switch (action.type) {
+        case SIGN_IN:
+            return {
+                ...state,
+                users: action.payload,
+                loading: false,
+            };
+        default:
+            return state;
+    }
+};
+
+export const AuthSignUp = (state = initialState, action) => {
+    switch (action.type) {
+        case SIGN_UP:
             return {
                 ...state,
                 users: action.payload,

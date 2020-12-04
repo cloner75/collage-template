@@ -3,6 +3,8 @@ export const GET_USERS = 'GET_USERS';
 export const GET_USER = 'GET_USER';
 export const UPDATE_USER = 'UPDATE_USER';
 export const USERS_ERROR = 'USERS_ERROR';
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_UP = 'SIGN_UP';
 
 // Conversation
 export const SET_CONVERSATION = 'SET_CONVERSATION';

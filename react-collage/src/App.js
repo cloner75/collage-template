@@ -4,7 +4,6 @@ import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import Upload from './components/Upload';
 import Profile from './components/User/profile'
-import Chat from './components/Chat';
 import Conversation from './components/Conversation';
 import GetNotification from './components/Notification/Get';
 import SetNotification from './components/Notification/Set';

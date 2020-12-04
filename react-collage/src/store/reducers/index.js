@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import userReducer from './usersReducer';
-import { GetUser, GetUsers, UpdateUser } from './user';
+import { GetUser, GetUsers, UpdateUser, AuthSignIn, AuthSignUp } from './user';
 import { SetNotification, GetNotification, GetNotifications, UpdateNotification } from './notification';
 import { GetChat, GetChats, SetChat, UpdateChat } from './chat';
 import { GetConversation, GetConversations, SetConversation, UpdateConversation } from './conversation';
@@ -21,5 +21,7 @@ export default combineReducers({
   GetConversation: GetConversation,
   GetConversations: GetConversations,
   SetConversation: SetConversation,
-  UpdateConversation: UpdateConversation
+  UpdateConversation: UpdateConversation,
+  AuthSignIn: AuthSignIn,
+  AuthSignUp: AuthSignUp
 })

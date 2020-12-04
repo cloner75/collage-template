@@ -1,8 +1,11 @@
 import { Component } from 'react';
+import { connect } from 'react-redux';
+import { AuthSignIn } from './../../store/actions/user'
+import Auth from './../../helper/Auth';
 import './../../assets/styles/signin.css'
 
 class SignIn extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = { username: '', password: '' };
   }
@@ -12,11 +15,15 @@ class SignIn extends Component {
   }
 
   check = () => {
-    console.log(`user:${this.state.username},pass:${this.state.password}`)
+    this.props.AuthSignIn({ username: this.state.username, password: this.state.password })
   }
 
 
   render() {
+    const { token } = this.props;
+    if (token) {
+      Auth.setToken(token)
+    }
     return (
       <div>
         <div id="signIn">
@@ -38,5 +45,8 @@ class SignIn extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return state.AuthSignIn.loading ? { token: { loading: true } } : { token: state.AuthSignIn.users.token }
+};
 
-export default SignIn;
+export default connect(mapStateToProps, { AuthSignIn })(SignIn);
